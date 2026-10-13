@@ -1,0 +1,105 @@
+
+
+/* Fondo de la página */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #d7edf1;
+  color: #105462;
+}
+
+/* Contenedor principal */
+#root {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  background-color: #346a74;
+  color: white;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+/* Subtítulos */
+h2 {
+  color: #145f6e;
+  border-bottom: 2px solid #6dc0d1;
+  padding-bottom: 8px;
+}
+
+/* Formulario */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #bad9df;
+  margin-bottom: 25px;
+}
+
+/* Campos de texto */
+input,
+select {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #3f7d8a;
+  border-radius: 6px;
+  background-color: #e2f2f5;
+  color: #166372;
+}
+/* Botones */
+button {
+  background-color: #4ea0b3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+/* Efecto de los botones */
+button:hover {
+  background-color: #2b7281;
+}
+
+/* Tabla de ventas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+/* Celdas */
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #eadccd;
+}
+
+/* Encabezado */
+th {
+  background-color: #2a7685;
+  color: white;
+}
+
+/* Efecto al pasar el mouse */
+tr:hover {
+  background-color: #aedee7;
+}
+
+/* Botón eliminar */
+td button:last-child {
+  background-color: #4c92d8;
+}
+
+td button:last-child:hover {
+  background-color: #468ed2;
+}
