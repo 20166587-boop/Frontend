@@ -1,105 +1,205 @@
 
-
-/* Fondo de la página */
+/* ===== Estilo general ===== */
 body {
   margin: 0;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  background-color: #d7edf1;
-  color: #105462;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #eaf6f9;
+  color: #345b66;
 }
 
-/* Contenedor principal */
 #root {
-  max-width: 1400px;
-  margin: auto;
+  width: 100%;
+  max-width: 1250px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: #eaf6f9;
+  box-sizing: border-box;
+  padding: 0 16px 30px;
 }
 
-/* Título principal */
+/* ===== Título principal ===== */
 h1 {
+  margin: 0;
+  padding: 14px 20px;
+  background-color: #356b76;
+  color: #ffffff;
   text-align: center;
-  background-color: #346a74;
-  color: white;
-  padding: 20px;
-  margin-bottom: 25px;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
 
-/* Subtítulos */
+/* ===== Subtítulos ===== */
 h2 {
-  color: #145f6e;
-  border-bottom: 2px solid #6dc0d1;
-  padding-bottom: 8px;
+  color: #286878;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 12px 0;
+  margin: 0 0 14px;
+  border-bottom: 1px solid #a9dbe5;
 }
 
-/* Formulario */
+/* ===== Formulario horizontal ===== */
 form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 22px 18px;
+  margin: 8px 0 20px;
   background-color: #ffffff;
-  padding: 20px;
+  border: 1px solid #d5eaf0;
   border-radius: 12px;
-  box-shadow: 0 3px 8px #bad9df;
-  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(64, 123, 139, 0.09);
 }
 
-/* Campos de texto */
+/* ===== Campos del formulario ===== */
 input,
 select {
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #3f7d8a;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #a9ced8;
   border-radius: 6px;
-  background-color: #e2f2f5;
-  color: #166372;
+  background-color: #f5fbfd;
+  color: #345b66;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
 }
-/* Botones */
+
+form select:first-child {
+  flex: 1.1;
+}
+
+form select:nth-child(2) {
+  flex: 1.8;
+}
+
+form input {
+  flex: 1;
+}
+
+input:focus,
+select:focus {
+  border-color: #4b9eb1;
+  box-shadow: 0 0 0 3px rgba(75, 158, 177, 0.13);
+}
+
+/* ===== Botones ===== */
 button {
-  background-color: #4ea0b3;
-  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 6px;
+  background-color: #4d9fb3;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
-  margin: 3px;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
-/* Efecto de los botones */
 button:hover {
-  background-color: #2b7281;
+  background-color: #347f92;
 }
 
-/* Tabla de ventas */
+button:active {
+  transform: scale(0.98);
+}
+
+/* ===== Tabla de ventas ===== */
 table {
   width: 100%;
-  border-collapse: collapse;
-  background-color: white;
-  border-radius: 10px;
+  border-collapse: separate;
+  border-spacing: 0;
   overflow: hidden;
-  margin-top: 15px;
+  background-color: #ffffff;
+  border: 1px solid #d5e8ed;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(64, 123, 139, 0.07);
+  font-size: 14px;
 }
 
-/* Celdas */
+/* ===== Celdas ===== */
 th,
 td {
-  padding: 12px;
+  padding: 13px 10px;
   text-align: center;
-  border: 1px solid #eadccd;
+  border-bottom: 1px solid #e2edf0;
+  border-right: 1px solid #e2edf0;
 }
 
-/* Encabezado */
+th:last-child,
+td:last-child {
+  border-right: none;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* ===== Encabezado de la tabla ===== */
 th {
-  background-color: #2a7685;
-  color: white;
+  background-color: #397e8d;
+  color: #ffffff;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
-/* Efecto al pasar el mouse */
-tr:hover {
-  background-color: #aedee7;
+/* ===== Filas ===== */
+tbody tr {
+  background-color: #ffffff;
+  transition: background-color 0.2s;
 }
 
-/* Botón eliminar */
+tbody tr:hover {
+  background-color: #eaf7fa;
+}
+
+/* ===== Botón eliminar ===== */
 td button:last-child {
-  background-color: #4c92d8;
+  background-color: #5899df;
 }
 
 td button:last-child:hover {
-  background-color: #468ed2;
+  background-color: #387fc7;
+}
+
+/* ===== Adaptación para pantallas pequeñas ===== */
+@media (max-width: 650px) {
+  #root {
+    padding: 0 8px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  form {
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  form select,
+  form input {
+    flex: 1 1 40%;
+  }
+
+  form button {
+    flex: 1 1 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
